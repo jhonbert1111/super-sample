@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valenzuela Online Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9d6b8;
+            color: #4a2b17;
+        }
+
+        .header {
+            display: flex;
+            align-items: center; /* Centers content vertically */
+            justify-content: space-between; /* Aligns text on the left and image on the right */
+            padding: 50px;
+            background-color: #f4a267;
+        }
+
+        .header-content {
+            max-width: 60%; /* Limits the width of the text content */
+        }
+
+        .header img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover; /* Ensures the image fills its container */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow */
+            margin-left: 20px; /* Spacing between the text and image */
+            float: right; /* Align the image to the right */
+        }  
+            
+        .header img:hover{
+            transform: scalre(1.1) rotate(5deg);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+       
+        .header h1 {
+            font-size: 36px;
+            margin: 20px 0 10px;
+        }
+
+        .header h3 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px;
+            background-color: #f9d6b8;
+        }
+
+        .section {
+            width: 45%;
+            padding: 20px;
+            border: 2px solid #e65a07;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .section:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .section h2 {
+            font-size: 24px;
+            color: #e65a07;
+            border-bottom: 2px solid #e65a07;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        .section p,
+        .section ul {
+            line-height: 1.8;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li::before {
+            content: "• ";
+            color: #e65a07;
+        }
+
+        .skills-section {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .skills-section h2 {
+            font-size: 24px;
+            color: #e65a07;
+            margin-bottom: 20px;
+        }
+
+        .skills-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .skill {
+            width: 45%;
+            margin: 10px 0;
+            text-align: left;
+            padding: 20px;
+            border: 2px solid #e65a07;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .skill:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .skill h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .progress-bar {
+            background-color: #f4a267;
+            height: 10px;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .progress-bar span {
+            display: block;
+            height: 100%;
+            background-color: #b45728;
+            border-radius: 5px;
+            transition: width 0.3s ease;
+        }
+
+        .skill:hover .progress-bar span {
+            width: 100%;
+        }
+
+        .contact-section {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .contact-section a {
+            color: #e65a07;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* Social Icons Style */
+        .social-icons {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            
+        }
+
+        .styled-image {
+            float: right;
+            margin-right: 30px;
+            border-radius: 50%; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            width: 250px; 
+            height: 250px; 
+            object-fit: cover; 
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover Effect */
+        .social-icons img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="header-content">
+            <h1>Valenzuela Online Portfolio</h1>
+            <h3>Jhon Bert Valenzuela</h3>
+            <h3>CITCS 1L-B</h3>
+        </div>
+        <img src="c:\Users\ADMIN\Downloads\462581201_557523203713747_5631304946147221733_n.jpg" alt="Profile Picture"> 
+    </div>
+
+    <script>
+        // Your JavaScript code here
+        console.log("JavaScript is working!");
+    </script>
+   
+</body>
+    <div class="container">
+        <div class="section">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Tertiary:</strong> Bachelor of Science in Information Technology (Cyber Security), University of the Cordilleras (2024 - Present)</li>
+                <li><strong>Secondary:</strong> University of the Cordilleras Senior High School (2022 - 2024)</li>
+                <li><strong>Junior High:</strong> Saint Mary’s University Junior High School (2018 - 2021)</li>
+                <li><strong>Primary:</strong> Bintawan South Elementary School (2012 - 2017)</li>
+            </ul>
+        </div>
+
+        
+        <div class="section">
+            <h2>About Me</h2>
+            <p>
+                I'm Jhon Bert Valenzuela 18 Years Old, and I like to do things like watching movies, eating, sleeping, and playing sports like taekwondo, basketball, biking, and volleyball. I also like to code and travel.
+            </p>
+        </div>
+    </div>
+
+    <div class="skills-section">
+        <h2>What I Can Do</h2>
+        <h3>Skills & Proficiencies</h3>
+        <div class="skills-container">
+            <div class="skill">
+                <h3>JAVA</h3>
+                <div class="progress-bar">
+                    <span style="width: 40%;"></span>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>ARDUINO</h3>
+                <div class="progress-bar">
+                    <span style="width: 80%;"></span>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Search Engine Optimization</h3>
+                <div class="progress-bar">
+                    <span style="width: 75%;"></span>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Social Media Marketing</h3>
+                <div class="progress-bar">
+                    <span style="width: 85%;"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-icons">
+            <!-- Instagram -->
+            <a href="https://instagram.com/yourprofile" target="_blank">
+                <img src="c:\Users\ADMIN\Downloads\Instagram_logo_2022.svg.webp" alt="Instagram Icon">
+            </a>
+            <!-- Twitter -->
+            <a href="https://twitter.com/yourprofile" target="_blank">
+                <img src="c:\Users\ADMIN\Downloads\64cebc6c19c2fe31de94c78e_X-vector-logo-download.png" alt="Twitter Icon">
+            </a>
+            <!-- Facebook -->
+            <a href="https://facebook.com/yourprofile" target="_blank">
+                <img src="c:\Users\ADMIN\Downloads\Facebook_Logo_2023.png" alt="Facebook Icon">
+            </a>
+        </div>
+        
+    </div>
+</body>
+</html>
